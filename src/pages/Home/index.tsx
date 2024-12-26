@@ -86,7 +86,11 @@ export const Home = () => {
 
                                         <p>{info.location}</p>
                                     </div>
-                                    <a href={info.url}>
+                                    <a
+                                        href={info.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <motion.button
                                             whileTap={{ scale: 0.9 }}
                                             className="px-6 py-1  rounded-lg border-[1px]"
